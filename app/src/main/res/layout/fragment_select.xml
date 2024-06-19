@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            style="@style/ToolbarStyle"
+            android:elevation="0dp"
+            app:contentInsetStart="0dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="3dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/editTextTextLayout"
+                    style="@style/TextInputLayoutStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:boxStrokeColor="@color/selector_box_transparent"
+                    app:hintEnabled="false"
+                    app:startIconDrawable="@drawable/icon_search">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editTextText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/black"
+                        android:hint="Поиск"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/filters"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:maxImageSize="36dp"
+                    app:fabCustomSize="40dp"
+                    android:layout_gravity="center"
+                    app:backgroundTint="@android:color/transparent"
+                    android:src="@drawable/icon_filter"
+                    app:tint="@android:color/black"
+                    app:elevation="0dp"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="fixed"
+            style="@style/TabLayoutStyle"
+            app:tabGravity="fill"
+            app:tabMaxWidth="0dp">
+
+        </com.google.android.material.tabs.TabLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:visibility="gone"
+        android:layout_margin="16dp"
+        app:fabSize="mini"
+        android:src="@drawable/icon_plus" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

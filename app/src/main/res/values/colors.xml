@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main">#f9fafc</color>
+    <color name="oldsecond">#48bdfa</color>
+    <color name="second">#ffbe5e</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="tableText">#999999 </color>
+    <color name="yellow">#edc526</color>
+    <color name="blue">#48bdfa</color>
+    <color name="red">#ed4726</color>
+    <color name="mygray">#868e96</color>
+    <color name="light_gray">#d3d3d3</color>
+    <color name="green">#3cce7b</color>
+
+    <color name="progress_color_1">#FF5733</color>
+    <color name="progress_color_2">#33FF57</color>
+    <color name="progress_color_3">#3357FF</color>
+    <color name="progress_color_4">#FF33A6</color>
+    <color name="progress_color_5">#33FFA6</color>
+    <color name="progress_color_6">#A633FF</color>
+    <color name="progress_color_7">#FF8C33</color>
+    <color name="progress_color_8">#33FF8C</color>
+    <color name="progress_color_9">#8C33FF</color>
+    <color name="progress_color_10">#FFC733</color>
+
+    <color name="hintColor">#000000</color>
+    <color name="borderColor">#909090</color>
+
+</resources>

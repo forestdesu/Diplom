@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment_main"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginVertical="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Сводка"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="18dp"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:cardCornerRadius="8dp"
+                android:layout_marginHorizontal="10dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Количество калорий:"
+                        android:textSize="16dp"
+                        android:layout_marginVertical="3dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ProgressBar
+                            android:id="@+id/allCalProgressBar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:progressDrawable="@drawable/rounded_progress_bar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_weight="1"
+                            android:progress="0"/>
+
+                        <TextView
+                            android:id="@+id/allCal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="0 / 5000"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="14dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <app.futured.donut.DonutProgressView
+                                    android:id="@+id/donut_view1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:donut_gapAngle="270"
+                                    app:donut_gapWidth="20"
+                                    app:donut_strokeWidth="10dp" />
+
+                                <TextView
+                                    android:id="@+id/textViewProgress1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0 ккал"
+                                    android:textSize="16sp"
+                                    android:layout_centerInParent="true" />
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Завтрак"
+                                android:layout_marginTop="5dp"
+                                android:textSize="16sp"
+                                android:textAlignment="center"/>
+
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <app.futured.donut.DonutProgressView
+                                    android:id="@+id/donut_view2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:donut_gapAngle="270"
+                                    app:donut_gapWidth="20"
+                                    app:donut_strokeWidth="10dp" />
+
+                                <TextView
+                                    android:id="@+id/textViewProgress2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0 ккал"
+                                    android:textSize="16sp"
+                                    android:layout_centerInParent="true" />
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Обед"
+                                android:layout_marginTop="5dp"
+                                android:textSize="16sp"
+                                android:textAlignment="center"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <app.futured.donut.DonutProgressView
+                                    android:id="@+id/donut_view3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:donut_gapAngle="270"
+                                    app:donut_gapWidth="20"
+                                    app:donut_strokeWidth="10dp" />
+
+                                <TextView
+                                    android:id="@+id/textViewProgress3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0 ккал"
+                                    android:textSize="16sp"
+                                    android:layout_centerInParent="true" />
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Полдник"
+                                android:layout_marginTop="5dp"
+                                android:textSize="16sp"
+                                android:textAlignment="center"/>
+
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <app.futured.donut.DonutProgressView
+                                    android:id="@+id/donut_view4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:donut_gapAngle="270"
+                                    app:donut_gapWidth="20"
+                                    app:donut_strokeWidth="10dp" />
+
+                                <TextView
+                                    android:id="@+id/textViewProgress4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0 ккал"
+                                    android:textSize="16sp"
+                                    android:layout_centerInParent="true" />
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Ужин"
+                                android:layout_marginTop="5dp"
+                                android:textSize="16sp"
+                                android:textAlignment="center"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Общие расходы:"
+                            android:layout_weight="1"
+                            android:textSize="18dp"/>
+
+                        <TextView
+                            android:id="@+id/allPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0 руб"
+                            android:textColor="@color/red"
+                            android:textSize="18dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Питание"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="18dp"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:cardCornerRadius="15dp"
+                android:layout_marginHorizontal="10dp"
+                app:cardElevation="3dp"
+                android:layout_marginBottom="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/breakfast"
+                            android:adjustViewBounds="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Завтрак"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:layout_marginHorizontal="15dp"
+                            android:layout_gravity="center"
+                            android:textSize="18dp"/>
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/plus1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:fabCustomSize="40dp"
+                            app:maxImageSize="32dp"
+                            android:src="@drawable/icon_plus"
+                            app:backgroundTint="@color/blue"
+                            app:tint="@android:color/white"
+                            app:elevation="0dp"/>
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#dadada"
+                        android:layout_marginVertical="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/lunch"
+                            android:adjustViewBounds="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Обед"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:layout_marginHorizontal="15dp"
+                            android:layout_gravity="center"
+                            android:textSize="18dp"/>
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/plus2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:fabCustomSize="40dp"
+                            app:maxImageSize="32dp"
+                            android:src="@drawable/icon_plus"
+                            app:backgroundTint="@color/blue"
+                            app:tint="@android:color/white"
+                            app:elevation="0dp"/>
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#dadada"
+                        android:layout_marginVertical="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/snack"
+                            android:adjustViewBounds="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Перекус"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:layout_marginHorizontal="15dp"
+                            android:layout_gravity="center"
+                            android:textSize="18dp"/>
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/plus3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:fabCustomSize="40dp"
+                            app:maxImageSize="32dp"
+                            android:src="@drawable/icon_plus"
+                            app:backgroundTint="@color/blue"
+                            app:tint="@android:color/white"
+                            app:elevation="0dp"/>
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#dadada"
+                        android:layout_marginVertical="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/dinner"
+                            android:adjustViewBounds="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ужин"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:layout_marginHorizontal="15dp"
+                            android:layout_gravity="center"
+                            android:textSize="18dp"/>
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/plus4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:fabCustomSize="40dp"
+                            app:maxImageSize="32dp"
+                            android:src="@drawable/icon_plus"
+                            app:backgroundTint="@color/blue"
+                            app:tint="@android:color/white"
+                            app:elevation="0dp"/>
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

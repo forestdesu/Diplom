@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment_ingredients_detail">
+
+    <include android:id="@+id/loading_page" layout="@layout/layout_loading_page" />
+
+    <ScrollView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/milk"
+                android:layout_marginVertical="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:text="Молоко"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="105 руб"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Описание"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/Desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Откройте для себя чистоту и свежесть в каждой капле молока. Продукт, который приносит радость вашему столу и заботу о вашем здоровье. Богатое белками, кальцием и витаминами, наше молоко станет незаменимым источником питательных веществ для вашего организма. Рекомендуемая дневная норма - один или два стакана молока, чтобы обеспечить вашему телу необходимые элементы для здоровья и энергии."
+                    android:textColor="@color/tableText"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Пищевая ценность (100 г)"
+                    android:textSize="20dp" />
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp">
+
+                    <!-- Верхняя граница -->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1.5dp"
+                        android:background="#808080" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="10dp">
+
+                        <TableRow android:layout_marginBottom="3dp">
+
+                            <TextView
+                                android:id="@+id/table1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:text="18,0"
+                                android:textAlignment="center"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/table2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:text="0,5"
+                                android:textAlignment="center"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/table3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:text="3,5"
+                                android:textAlignment="center"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/table4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:text="90"
+                                android:textAlignment="center"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:text="белки"
+                                android:textAlignment="center"
+                                android:textColor="@color/tableText"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:text="жиры"
+                                android:textAlignment="center"
+                                android:textColor="@color/tableText"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:text="углеводы"
+                                android:textAlignment="center"
+                                android:textColor="@color/tableText"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:text="ккал"
+                                android:textAlignment="center"
+                                android:textColor="@color/tableText"
+                                android:textSize="14dp" />
+                        </TableRow>
+
+                    </TableLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1.5dp"
+                        android:layout_gravity="bottom"
+                        android:background="#808080" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Подробнее:"
+                    android:textSize="20dp" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="5dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="3dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="Категория"
+                            android:textColor="@color/tableText"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/MoreDetail1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="Молочные продукты"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/tableText"
+                            android:textSize="16dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="3dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="Сезон"
+                            android:textColor="@color/tableText"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/MoreDetail2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="Всесезонный"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/tableText"
+                            android:textSize="16dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="3dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="Тип"
+                            android:textColor="@color/tableText"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/MoreDetail3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="Напиток"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/tableText"
+                            android:textSize="16dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="3dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="Срок хранения"
+                            android:textColor="@color/tableText"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/MoreDetail4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="48 часов"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/tableText"
+                            android:textSize="16dp" />
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_dialog">
+
+    <!-- ProgressBar centered -->
+
+
+    <!-- Main content -->
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="10dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TextInputLayout1"
+            style="@style/CustomDropMenuStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxBackgroundColor="@color/white"
+            android:layout_marginBottom="10dp"
+            app:startIconDrawable="@drawable/icon_time"
+            android:hint="Время приема пищи">
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoCompleteTextView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="none"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TextInputLayout2"
+            style="@style/CustomDropMenuStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxBackgroundColor="@color/white"
+            android:layout_marginBottom="10dp"
+            app:startIconDrawable="@drawable/icon_ration"
+            android:hint="Блюдо"
+            android:enabled="false">
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoCompleteTextView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TextInputLayout3"
+            style="@style/CustomDropMenuStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxBackgroundColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:hint="Рецепт"
+            app:errorEnabled="true"
+            app:startIconDrawable="@drawable/icon_receipt">
+
+            <AutoCompleteTextView
+                android:id="@+id/AutoCompleteTextView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="none"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextInputLayout4"
+                style="@style/CustomTextInputLayoutStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                android:layout_weight="1"
+                app:boxCornerRadiusTopStart="10dp"
+                android:hint="Количество">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="numberDecimal"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextInputLayout5"
+                style="@style/CustomDropMenuStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                app:boxBackgroundColor="@color/white"
+                android:hint="Ед.изм"
+                android:enabled="false">
+
+                <AutoCompleteTextView
+                    android:id="@+id/AutoCompleteTextView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2084f4"
+            android:text="Добавить в рацион" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/progressBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="#80dadada"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</FrameLayout>

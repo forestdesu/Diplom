@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group1">
+        <item
+            android:icon="@drawable/icon_receipt"
+            android:id="@+id/navReceipt"
+            android:title="Рецепты"/>
+
+        <item
+            android:icon="@drawable/icon_ingredients"
+            android:id="@+id/navIngredients"
+            android:title="Ингредиенты"/>
+        <item
+            android:icon="@drawable/icon_home"
+            android:id="@+id/navMain"
+            android:title="Главная"/>
+        <item
+            android:icon="@drawable/icon_report"
+            android:id="@+id/navReport"
+            android:title="Отчеты"/>
+        <item
+            android:icon="@drawable/icon_person"
+            android:id="@+id/navProfile"
+            android:title="Профиль"/>
+    </group>
+
+</menu>
