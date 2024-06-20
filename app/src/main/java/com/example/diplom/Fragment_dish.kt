@@ -74,7 +74,7 @@ class Fragment_dish(private val mealtime_id: Int?) : Fragment(), Adapter_dish.Di
     override fun onDishClick(type_id: Int) {
         Log.d("supabase", "Click!")
         val fragment = Fragment_dish_detail(type_id, mealtime_id)
-        parentFragmentManager.beginTransaction()
+        requireActivity().supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_container, fragment)
             .addToBackStack(null)
             .commit()

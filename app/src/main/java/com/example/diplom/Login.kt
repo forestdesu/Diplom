@@ -12,14 +12,11 @@ import kotlinx.coroutines.launch
 
 
 class Login : AppCompatActivity() {
-    private lateinit var progressBar: ProgressBar
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         setContentView(R.layout.activity_login)
 
-        progressBar = findViewById(R.id.progressBar2)
         val userEmail = findViewById<TextInputEditText>(R.id.textInputEditText1)
         val userPassword = findViewById<TextInputEditText>(R.id.textInputEditText2)
 

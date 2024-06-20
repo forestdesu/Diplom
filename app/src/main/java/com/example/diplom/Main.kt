@@ -41,13 +41,6 @@ class Main : AppCompatActivity() {
                 }
                 R.id.navReceipt -> {
                     supportFragmentManager.beginTransaction()
-                        .replace(R.id.fragment_container, Fragment_dish(null))
-                        .addToBackStack(null)
-                        .commit()
-                    true
-                }
-                R.id.navReport -> {
-                    supportFragmentManager.beginTransaction()
                         .replace(R.id.fragment_container, Fragment_dish_select())
                         .addToBackStack(null)
                         .commit()

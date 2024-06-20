@@ -13,13 +13,9 @@ class AppLauncher : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         lifecycleScope.launch {
-            Log.d("testmain", "1")
             val isUserLoggedIn = checkLogin()
-            Log.d("testmain", "2")
             val targetActivity = if (isUserLoggedIn) Main::class.java else Login::class.java
-            Log.d("testmain", "3")
             startActivity(Intent(this@AppLauncher, targetActivity))
-            Log.d("testmain", "4")
             finish()
         }
     }
